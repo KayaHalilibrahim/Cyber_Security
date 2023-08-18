@@ -1,4 +1,5 @@
-                   Kali linuxta kullanılan yaygın komutlar
+#Kali linuxta kullanılan yaygın komutlar
+
 1. setxkbmap tr= Klavyeyi Türkçe olarak çalıştırır.
 2. pwd = Kullanıcının bulunduğu klasörü gösterir.
 3. ls = Bulunduğu klasörün içeriklerini listeler.
