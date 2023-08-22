@@ -1,0 +1,24 @@
+1. apt/apt get install packageName = Used to download the package
+2. apt remove packageName = Deletes the package.
+3. apt upgrade = Updates everything on the computer.
+4. apt --only upgrade packageName = Only the relevant package is updated.
+5. dpkg = It is used to download offline packages.
+6. dpkg -r packageName = Deletes the package.
+7. dpkg -l = Returns the list of installed packages.
+8. git clone githubLink = Download package on Github.
+9. cat dosyaAdı = Read the file.
+10. nano dosyaAdı = Takes the file inside the nano editor.
+
+in the nano editor:
+- CTRL + O = It records.
+- CTRL + x = Exits the nano editor.
+
+11. Ci dosyaAdı = It is used for text editing like nano, working with commands.
+
+In the ci editor:
+- v = Visual mode.
+- i =İnsert mode.
+- esc = Used to exit mods.
+- dd = Deletes the row it is in.
+- y =  Copies.
+- p = It pastes.
