@@ -3,13 +3,13 @@
 1. setxkbmap tr= Operates the keyboard in Turkish.
 2. pwd = Shows the folder the user is in.
 3. ls = Lists the contents of the folder it is in.
-4. ls -al = Bulunduğu klasörlerin içeriklerini ayrıntılı bir şekilde listeler.
+4. ls -al = It lists the contents of the folders it is in in detail.
 5. cd = It lists the contents of the folders it is in in detail.
 6. cd .. = Used to go back.
 7. mkdir folderName = It is used to create a folder.
 8. clear = Clears the command screen.
 9. touch fileName = It is used to create a file.
-10. cp kopyalanacakDizin yapıştırılacağıYer = It is used to copy.
+10. cp fileToCopied placeToPaste = It is used to copy.
 11. rm fileName= It is used to delete the file.
 12. rm -help = Provides information on the use of rm.
 13. rm -r folderName = Deletes the entered folder.
@@ -20,10 +20,10 @@
 18. sudo su = It is used to switch from the "kali" command to the "root" command.
 - Switching from "kali" user to "root" user (with "sudo su" command)
 then use the "exit" command to switch back to the "kali" user.
-19. file folderName = Indicates the type of file.
+19. file folderName = show the type of file.
 20. passwd username = Shows the password.
 21. passwd = Used to change password.
-22. klavyede upArrowKey = Gives the last entered commands.
+22. onTheKeyBoard upArrowKey = Gives the last entered commands.
 23. ifconfig = shows our ip address. 
 24. ip addr show = gives information about the ip.
 25. apt search packageName = it gives information about the package.
