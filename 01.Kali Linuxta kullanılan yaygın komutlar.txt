@@ -14,3 +14,19 @@
 12. rm -help = rm' nin kullanımı hakkında bilgi verir.
 13. rm -r klasörAdı = Girilen klasörü siler.
 14. rm -rf dizinAdı= Zorla siler.
+15. mv taşınacakDosya taşınacağıYer = Klasörü taşımak
+ için kullanılır. 
+16. root = En yetkili kullanıcı.
+17.kali = “root” 'un yaptığı her şeyi yapamaz.
+18. sudo su = “kali” komutundan “root“ komutuna geçiş için   kullanılır.
+- “kali” kullanıcısından “root” kullanıcısına geçtikten ("sudo su" komutu ile) sonra tekrar “kali” kullanıcısına geçmek için "exit” komutu kullanılır.
+19. file dosyaAdı = Dosyanın türünü gösterir.
+20. passwd kullanıcıAdı = Şifreyi gösterir.
+21. passwd = Şifre değiştirmek için kullanılır.
+22. klavyede üstOkTuşu = Son girilen komutları verir.
+23. ifconfig = ip adresimizi gösterir. 
+24. ip addr show = ip hakkında bilgi verir.
+25. apt search paketAdı = Paket hakkında bilgi verir.
+26.apt show paketAdı = Paket hakkında daha detaylı bilgi verir.
+27. cat/etc/group = Grupları gösterir.
+
