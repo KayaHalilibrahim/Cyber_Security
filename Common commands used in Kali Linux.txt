@@ -4,7 +4,7 @@
 2. pwd = Shows the folder the user is in.
 3. ls = Lists the contents of the folder it is in.
 4. ls -al = It lists the contents of the folders it is in in detail.
-5. cd = It lists the contents of the folders it is in in detail.
+5. cd = Used to navigate between directories or files.
 6. cd .. = Used to go back.
 7. mkdir folderName = It is used to create a folder.
 8. clear = Clears the command screen.
