@@ -1,0 +1,29 @@
+Filesystem Directories in Kali Linux
+
+bin = Binary commands run by the user are found. This directory contains the executable files of system and user-installed programs.
+
+sbin = There are commands used mostly by the "root" user.
+
+Dev = Hardware files are found.
+
+etc = Configuration files are found.
+- etc/passwd: Contains basic information of users.
+- etc/group: Provides information about user groups.
+- etc/hostname: Contains the computer name.
+- etc/network/ or /etc/sysconfig/network/: Network configuration files.
+- etc/resolv.conf: File containing the configuration of DNS (Domain Name System) servers.
+- etc/hosts: File matching IP addresses and hostnames.
+
+var = There are variable files (log etc).
+
+tmp = Temporary files are found.
+
+home = User's folders are found.
+
+boot = There are opening files.
+
+srv = service files.
+
+usr = The applications that the user will use and the packages we install are usually here.
+
+lib = Basic system libraries are available.
