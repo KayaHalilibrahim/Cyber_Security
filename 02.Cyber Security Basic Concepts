@@ -1,0 +1,81 @@
+Cyber Security Basic Concepts
+
+ IOT PROTOKOLLERİ
+ -Nesnelerin İnterneti(İOT), internet üzerinden diğer cihaz ve sistemlere veri bağlantısı ve paylaşımı amacıyla sensörler,
+ yazılımlar ve diğer teknolojilerle gömülü olan fiziksel nesnelerin ağını açıklar.Bu cihazlar,sıradan ev nesnelerinden gelişmiş
+ endüstriyel araçlara kadar değişiklik gösterir.
+
+ 1.MQTT
+ -Otomotiv, lojistik, üretim, akıllı ev ve ulaşım sektöründe kullanılır.
+ -Makineden makineye iletişim için kullanılan, standart tabanlı bir mesajlaşma protokolü veya kurallar dizisidir.
+ -Çift yönlü iletişim sağlar.
+
+ 2.CoAP
+ -Bir uygulama katmanı protokolüdür.
+ -Varsayılan olarak Udp'ye bağlanır. İsteğe bağlı TTLS'e bağlanır.
+ -Yüksek düzeyde iletişim güvenliği sağlar.
+
+ 3.TELNET PROTOKOLÜ
+ -Varsayılan olarak 23 nolu portu kullanılır.
+ -İstemci sunucu modeli kullanılır.
+ -Bir bilgisayarın uzak bir bilgisayara bağlanarak, komut ve veri iletmek için kullanılır.
+ -Gelen ve giden verileri şifrelemez bu yüzden güvenliği düşüktür.
+ -Modern ağlarda telnet yerine ssh protokolü kullanılır.
+ -Kısaca ağlarda uzak erişim için kullanılır ancak güvenilir değildir.
+ -Ortadaki adam sayısı saldırısı yapılmaya uygundur.
+
+ 4.SSH PROTOKOLÜ
+ -Varsayılan olarak olarak 22 nolu portu kullanır.
+ -Uzaktan güvenli oturum açma ve yeri transferi işlemlerinde kullanılır.
+ -Güçlü bir şifre, bütünlük ve kimlik doğrulama sağlamaktadır.
+ -Anahtar değişim yöntemi için diffie hellman anahtar değişim metodu kullanılır.
+
+ 5.FTP PROTOKOLLERİ
+ -File transfer protokol.
+ -Varsayılan olarak 21 nolu protokolü kullanır.
+ -Temel amaç dosya paylaşımını sağlamaktadır.
+
+ 6.SMTP = SIMPLE MAIL TRANSFER PROTOKOL
+ -Elektronik posta gönderimi için kullanılır.
+ -Genellikle tcp protkolü üzerinden gerçekleşir.
+ -Posta göndermek isteyen kullanıcı smtp protokolüne tcp bağlantısı kurar.Kimlik doğrulama yapar.
+
+ 7.DNS = DOMAIN NAME SYSTEM
+-İnternet üzerindeki cihazların isimlerinin IP adresleri ile eşlenmesini sağlar.
+-Varsayılan olarak 53 nolu portu kullanır.
+-Tcp veya Udp üzerinden çalışabilir.
+-Kısaca belirli makine adlarını, bilgisayarın anladığı dil olan IP numaralarına çevirmektedir.
+
+8.TFTP PROTOKOLÜ
+-Dosya aktarım için kullanılan bir ağ protokolüdür.
+-Udp üzerinden çalışır.
+-TFTP sunucu ve istemci arasında dosya aktarımı için kullanılır.İstemci dosya yüklemek veya indirmek için sunucuya
+istek atar.
+-En önemli özelliği diğer dosya aktarım protokollerine göre daha basittir.Ayrıca daha az özellik vardır.
+
+9.HTTP PROTOKOLÜ
+-World wide webdeki verilerin iletişimini sağlamak için kullanılan bir protokoldür.
+-Varsayılan olarak 80 nolu portu kullanır.
+-İstemci sunucu modeli kullanarak çalışır.
+-İstemci web sayfası gibi bir arayüz istemek için bir talep gönderir, sunucu belgeyi yanıt olarak gönderir.
+ 
+ HTTP YAYGIN KULLANILAN METODLAR:
+ 1.Get: Sunucudan bir kaynak istemek için kullanılır.
+ 2.Post: Sunucuya yeni bir kaynak veya mevcut kaynağı değiştirmek için kullanılır.
+ 3.Put: Sunucuya yeni bir kaynak eklemek veya mevcut bir kaynağı değiştirmek için kullanılır.
+ 4.Delete: Sunucudan bir kaynak silmek kullanılır.
+ 5. Options: Sunucunun desteklediği metodları sorgulamak için kullanılır.
+
+ İstek ve Yanıt Mesajları
+ -istek Mesajları: İstemci tarafından sunucuya gönderilir.
+ -Yanıt Mesajları: Sunucu tarafından istemciye gönderilir.
+
+ -HTTP mesajları başlık ve gövde olmak üzere iki bölgeden oluşur.
+ -HTTP Durum Kodları:
+ 1-> Bilgilendirme kodları
+ 2-> Başarılı kodlar
+ 3-> Yönlendirme Kodları
+ 4-> İstemci Kodları
+ 5-> Sunucu hata kodları
+
+ HTTP 1.1 en yaygın kullanılan tiptir.

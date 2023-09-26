@@ -1,0 +1,132 @@
+Siber Güvenlik Temel Kavramlar
+
+1. Mac Adresi = Fiziksel Adres = Donanım Adres:
+- Ethernet kartının geliştiricisi tarafından atanmış 48 bitlik adrestir.
+- İlk 24 bit ethernet kartının üreten şirketi, son 24 bit ethernet kartını belirtir.
+- Mac adresi ile yerel ağlarda haberleşme sağlanabilir.
+- 
+
+2.Ip Adres = İnternet Protokol Adres:
+- 32 bitten oluşur.
+- Ağ üzerinden haberleşme için kullanılır.
+- Mac adresini bilgisayarın simasına, IP adresini ise bilgisayarın ismine benzetebiliriz.
+
+3.Public Adres = Genel IP Adres:
+-Internette çıkan cihazlara ISP(İnternet Servis Sağlayıcı) tarafından yönlendiriciye atanan adrestir.
+- Aynı modeme bağlı cihazlar aynı IP adresine sahiptir.
+
+4.Private IP Adres:
+- Kapalı yerel ağlarda her bir sistemin sahip olduğu IP adresidir.
+-Kapaılı yerel ağlarda benzersizdir.
+
+5.Static IP Adres:
+-Kullanıcı tarafından girilmiş Ip adresidir.
+-Ip adresleri sabit kalması istenen Ip adreslerinde kullanılır.
+
+6.Dinamik Ip Adres:
+- Bir Ip havuzundan otomatik ve belirli bir süreyle dağıtılan Ip adresidir.
+
+7.Bilgi Güvenliği Unsurları:
+-Gizlilik
+-Bütünlük
+-Erişebilirlik
+
+Gizlilik: Bilgi kaynağının yetkisiz bir şekilde erişilip erişilemediğini belirten kavramdır.
+Bütünlük: Bilgi kaynağının yetkisiz bir şekilde değiştirilip değiştirilemediğini belirten kavramdır.
+Erişilebilirlik: Bilgi kaynağının bütün fonksiyonlarına istenilen süre boyunca erişilip erişilmediğini kontrol eden kavramdır.
+
+8.Authorization:
+- Bir kaynağa erişen kişinin yetkilerini tanımlar.
+
+9.Authentication:
+- Kaynağa erişmek isteyen kişinin kimlik doğrulanmasıdır.
+
+10.Ağ:
+-En az iki sistemin birbiri ile haberleşmesi için kurdukları yapılardır.
+
+11.Topoloji:
+- Ağa bağlı cihazların ağda hangi cihazlara nasıl bağlandığını gösterir.
+
+12.Bus Topoloji:
+-İletişim omurga denilen tek bir hat üzerinden gerçekleşir.
+-Veri iletilmeden önce hattın boş olup olmadığını kontrol edilir.
+-Omurga çökerse hat çöker.
+
+13.Halka Topoloji:
+-Halka biçiminde bir ağ üzerinde veri kullanıcıya erişinceye kadar bütün hedeflere uğrar.
+- Bir cihaz bozulursa hat çöker.
+
+14.Yıldız Topoloji:
+-Merkezde bulunan bir ağ cihazı üzerinden iletişim gerçekleşir.
+-En yaygın kullanılan topolojidir.
+-Merkezdeki topoloji bozulursa ağ kullanılmaz.
+- Cihaz eklemek kolaydır.
+
+15.Mesh Topolojisi:
+-Ağa bağlı bir cihaz ağdaki diğer cihazlara da bağlıdır.
+-Veri kaybını önlemek için kullanılır.
+
+16.Ağ Prokolleri:
+-Ağa bağlı cşhazların birbiri ile nasıl haberleşeceğini belirtir.
+-Her bir protokole ilişkin arc dokümanı bulunur.
+
+17.OSİ Model:
+-Farklı sistem ve cihazların ortak bir haberleşme için kullanılan modeldir.
+-Sistemlerin birbiri ile haberleşmesini tanımlamak için oluşturulmuştur.
+-7 katmana ayrılmıştır:
+
+a.Fizikse Katman
+b.Veri Bağı Katmanı
+c.Ağ Katmanı
+d.Taşıma katmanı
+e.Oturum Katmanı
+f.Sunu Katmanı
+g.Uygulama Katmanı
+
+a.Fiziksel Katman:
+-İçerikle ilgilenmez, nasıl iletileciğini gösterir.
+-Bir porttan gelen sinyali diğer portlara gönderir.
+-Hub bu katmanda çalışır.
+-Hub:Ağ cihazları arasında veri iletimini kolaylaştırmak için kullanılan bir ağ aygıtıdır.
+
+b.Veri Bağı Katmanı:
+-Frame veya Çerçeve
+-Wiresharkta frame context ifadesi bu katmandaki veriyi tanımlar.
+-Ağ katmanından gelen paketlerin hata kontrol bitlerini ekleyerek frame halinde fiziksel katmana iletir.
+-Framenin hatalı iletilip iletilmediğini kontrol eder. Eğer hata varsa tekrar üretir.,
+-Switchler bu katmanda çalışır.
+-Ethernet bu katmana aittir.
+-Mac adresi ile çalışırlar.
+-Hedef mac adresine ilgili frameyi gönderirler.
+
+c.Ağ Katmanı:
+-3.katmanda veri paket olarak nitelendirilir.
+-Ip, ICMP ve Arp protokolleri bu katmana aittir.
+-Rooterler bu katmanda çalışırlar.
+-Ağ katmanı paketin farklı bir ağa yönlendirilmesi gerektiğinde rooterler ile yapar.
+-Ağ katmanında port bilgisi yoktur.
+
+d.Taşıma Katmanı
+-Tcp ve Udp protokollerini kullanılır.
+-Verinin gönderilen kısımlarının doğru birleştirilmesinden sorumludur.
+-Verinin güvenilir bir şekilde ulaşılıp ulaşımadığını kontrol eder.
+
+e.Oturum Katmanı:
+-Sistemler arasındaki bağlantının kurulması, işlenmesi ve sonlandırılmasını sağlar.
+
+f.Sunum Katmanı:
+-Verinin istenilen formatta gösterilmesini sağlar.
+-kodlama, dönüştürme, şifreleme bu katmanda olur.
+*SSL protokolü bu katmanda çalışır.
+
+g.Sunum Katmanı:
+-Kullanıcılar tarafından kullanılan programların ve uygulamaların ağ tarafından birbiriyle haberleşmesi
+ için gerekli protokoller bu katmanda çalışır.
+ -http, ftp, smtp protokolleri bu katmana çalışır.
+ -Kullanıcıya en yakın katman.
+
+
+
+
+
+
