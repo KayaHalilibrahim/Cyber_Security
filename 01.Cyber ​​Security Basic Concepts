@@ -1,129 +1,126 @@
-Siber Güvenlik Temel Kavramlar
+Cyber Security Basic Concepts
 
-1. Mac Adresi = Fiziksel Adres = Donanım Adres:
-- Ethernet kartının geliştiricisi tarafından atanmış 48 bitlik adrestir.
-- İlk 24 bit ethernet kartının üreten şirketi, son 24 bit ethernet kartını belirtir.
-- Mac adresi ile yerel ağlarda haberleşme sağlanabilir.
-- 
+1.MAC Address = Physical Address = Hardware Address:
+-It is a 48-bit address assigned by the developer of the Ethernet card.
+-The first 24 bits indicate the company that produced the Ethernet card, while the last 24 bits specify the Ethernet card itself.
+- MAC address is used for communication in local networks.
 
-2.Ip Adres = İnternet Protokol Adres:
-- 32 bitten oluşur.
-- Ağ üzerinden haberleşme için kullanılır.
-- Mac adresini bilgisayarın simasına, IP adresini ise bilgisayarın ismine benzetebiliriz.
+2.IP Address = Internet Protocol Address:
+-Consists of 32 bits.
+-Used for communication over the network.
+-You can think of the MAC address as the face of the computer, and the IP address as its name.
 
-3.Public Adres = Genel IP Adres:
--Internette çıkan cihazlara ISP(İnternet Servis Sağlayıcı) tarafından yönlendiriciye atanan adrestir.
-- Aynı modeme bağlı cihazlar aynı IP adresine sahiptir.
+3.Public Address = Public IP Address:
+-An address assigned to devices connecting to the internet by the Internet Service Provider (ISP).
+-Devices connected to the same modem share the same IP address.
 
-4.Private IP Adres:
-- Kapalı yerel ağlarda her bir sistemin sahip olduğu IP adresidir.
--Kapaılı yerel ağlarda benzersizdir.
+4.Private IP Address:
+-It is the IP address that each system has in closed local networks.
+-Unique within closed local networks.
 
-5.Static IP Adres:
--Kullanıcı tarafından girilmiş Ip adresidir.
--Ip adresleri sabit kalması istenen Ip adreslerinde kullanılır.
+5.Static IP Address:
+-An IP address entered by the user.
+-Used for IP addresses that need to remain constant.
 
-6.Dinamik Ip Adres:
-- Bir Ip havuzundan otomatik ve belirli bir süreyle dağıtılan Ip adresidir.
+6.Dynamic IP Address:
+-An IP address automatically assigned from an IP pool for a specified period.
 
-7.Bilgi Güvenliği Unsurları:
--Gizlilik
--Bütünlük
--Erişebilirlik
+6.Elements of Information Security:
+-Confidentiality
+-Integrity
+-Availability
 
-Gizlilik: Bilgi kaynağının yetkisiz bir şekilde erişilip erişilemediğini belirten kavramdır.
-Bütünlük: Bilgi kaynağının yetkisiz bir şekilde değiştirilip değiştirilemediğini belirten kavramdır.
-Erişilebilirlik: Bilgi kaynağının bütün fonksiyonlarına istenilen süre boyunca erişilip erişilmediğini kontrol eden kavramdır.
+Confidentiality: A concept that determines whether unauthorized access to information resources is possible or not.
+Integrity: A concept that determines whether unauthorized changes to information resources are possible or not.
+Availability: A concept that controls whether all functions of information resources can be accessed during the desired time.
 
-8.Authorization:
-- Bir kaynağa erişen kişinin yetkilerini tanımlar.
+7.Authorization:
+-Defines the privileges of the person accessing a resource.
 
-9.Authentication:
-- Kaynağa erişmek isteyen kişinin kimlik doğrulanmasıdır.
+8.Authentication:
+-The verification of the identity of the person wanting to access a resource.
 
-10.Ağ:
--En az iki sistemin birbiri ile haberleşmesi için kurdukları yapılardır.
+9.Network:
+Structures established for communication between at least two systems.
 
-11.Topoloji:
-- Ağa bağlı cihazların ağda hangi cihazlara nasıl bağlandığını gösterir.
+10.Topology:
+Shows how devices connected to a network are linked and how they are connected.
 
-12.Bus Topoloji:
--İletişim omurga denilen tek bir hat üzerinden gerçekleşir.
--Veri iletilmeden önce hattın boş olup olmadığını kontrol edilir.
--Omurga çökerse hat çöker.
+11.Bus Topology:
+Communication occurs over a single backbone.
+The status of the line is checked to see if it is empty before transmitting data.
+If the backbone fails, the entire network collapses.
 
-13.Halka Topoloji:
--Halka biçiminde bir ağ üzerinde veri kullanıcıya erişinceye kadar bütün hedeflere uğrar.
-- Bir cihaz bozulursa hat çöker.
+12.Ring Topology:
+Data passes through all targets on a network in a ring-shaped network.
+If one device fails, the network fails.
 
-14.Yıldız Topoloji:
--Merkezde bulunan bir ağ cihazı üzerinden iletişim gerçekleşir.
--En yaygın kullanılan topolojidir.
--Merkezdeki topoloji bozulursa ağ kullanılmaz.
-- Cihaz eklemek kolaydır.
+13.Star Topology:
+Communication takes place through a network device located in the center.
+The most common topology.
+If the central device fails, the network becomes unusable.
+Adding devices is easy.
 
-15.Mesh Topolojisi:
--Ağa bağlı bir cihaz ağdaki diğer cihazlara da bağlıdır.
--Veri kaybını önlemek için kullanılır.
+14.Mesh Topology:
+A device connected to the network is linked to all other devices.
+Used to prevent data loss.
 
-16.Ağ Prokolleri:
--Ağa bağlı cşhazların birbiri ile nasıl haberleşeceğini belirtir.
--Her bir protokole ilişkin arc dokümanı bulunur.
+15.Network Protocols:
+Define how devices connected to a network will communicate with each other.
+Each protocol has an associated RFC document.
 
-17.OSİ Model:
--Farklı sistem ve cihazların ortak bir haberleşme için kullanılan modeldir.
--Sistemlerin birbiri ile haberleşmesini tanımlamak için oluşturulmuştur.
--7 katmana ayrılmıştır:
+16.OSI Model:
+-A model for common communication between different systems and devices.
+-Created to define communication between systems.
+-Divided into 7 layers:
+a. Physical Layer
+b. Data Link Layer
+c. Network Layer
+d. Transport Layer
+e. Session Layer
+f. Presentation Layer
+g. Application Layer
 
-a.Fizikse Katman
-b.Veri Bağı Katmanı
-c.Ağ Katmanı
-d.Taşıma katmanı
-e.Oturum Katmanı
-f.Sunu Katmanı
-g.Uygulama Katmanı
+a. Physical Layer:
+Doesn't deal with content; it shows how it will be transmitted.
+Sends signals from one port to another.
+Hubs operate at this layer.
+Hub: A network device used to facilitate data transmission between network devices.
 
-a.Fiziksel Katman:
--İçerikle ilgilenmez, nasıl iletileciğini gösterir.
--Bir porttan gelen sinyali diğer portlara gönderir.
--Hub bu katmanda çalışır.
--Hub:Ağ cihazları arasında veri iletimini kolaylaştırmak için kullanılan bir ağ aygıtıdır.
+b. Data Link Layer:
+-Frame
+-In Wireshark, the term "frame context" identifies data in this layer.
+-Transmits data in frame format, adding error control bits to packets from the network layer.
+-Checks whether the frame is transmitted with errors. If there is an error, it regenerates the frame.
+-Switches operate at this layer.
+-Ethernet belongs to this layer.
+-Operates using MAC addresses.
+-Sends frames to the target MAC address.
 
-b.Veri Bağı Katmanı:
--Frame veya Çerçeve
--Wiresharkta frame context ifadesi bu katmandaki veriyi tanımlar.
--Ağ katmanından gelen paketlerin hata kontrol bitlerini ekleyerek frame halinde fiziksel katmana iletir.
--Framenin hatalı iletilip iletilmediğini kontrol eder. Eğer hata varsa tekrar üretir.,
--Switchler bu katmanda çalışır.
--Ethernet bu katmana aittir.
--Mac adresi ile çalışırlar.
--Hedef mac adresine ilgili frameyi gönderirler.
+c. Network Layer:
+-Data is referred to as packets in the 3rd layer.
+-IP, ICMP, and ARP protocols belong to this layer.
+-Routers operate at this layer.
+-The network layer performs routing when packets need to be directed to a different network.
+-There are no port details in the network layer.
 
-c.Ağ Katmanı:
--3.katmanda veri paket olarak nitelendirilir.
--Ip, ICMP ve Arp protokolleri bu katmana aittir.
--Rooterler bu katmanda çalışırlar.
--Ağ katmanı paketin farklı bir ağa yönlendirilmesi gerektiğinde rooterler ile yapar.
--Ağ katmanında port bilgisi yoktur.
+d. Transport Layer:
+-Uses TCP and UDP protocols.
+-Responsible for ensuring that the parts of data sent are correctly reassembled.
+-Checks whether data is reliably accessed or not.
 
-d.Taşıma Katmanı
--Tcp ve Udp protokollerini kullanılır.
--Verinin gönderilen kısımlarının doğru birleştirilmesinden sorumludur.
--Verinin güvenilir bir şekilde ulaşılıp ulaşımadığını kontrol eder.
+e. Session Layer:
+-Manages the establishment, processing, and termination of connections between systems.
 
-e.Oturum Katmanı:
--Sistemler arasındaki bağlantının kurulması, işlenmesi ve sonlandırılmasını sağlar.
+f. Presentation Layer:
+-Ensures data is presented in the desired format.
+-Coding, conversion, and encryption occur at this layer.
+-SSL protocol operates at this layer.
 
-f.Sunum Katmanı:
--Verinin istenilen formatta gösterilmesini sağlar.
--kodlama, dönüştürme, şifreleme bu katmanda olur.
-*SSL protokolü bu katmanda çalışır.
-
-g.Sunum Katmanı:
--Kullanıcılar tarafından kullanılan programların ve uygulamaların ağ tarafından birbiriyle haberleşmesi
- için gerekli protokoller bu katmanda çalışır.
- -http, ftp, smtp protokolleri bu katmana çalışır.
- -Kullanıcıya en yakın katman.
+g. Application Layer:
+-Protocols required for communication between programs and applications used by users on the network.
+-HTTP, FTP, SMTP protocols belong to this layer.
+-Closest layer to the user.
 
 
 

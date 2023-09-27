@@ -1,81 +1,79 @@
+
 Cyber Security Basic Concepts
 
- IOT PROTOKOLLERİ
- -Nesnelerin İnterneti(İOT), internet üzerinden diğer cihaz ve sistemlere veri bağlantısı ve paylaşımı amacıyla sensörler,
- yazılımlar ve diğer teknolojilerle gömülü olan fiziksel nesnelerin ağını açıklar.Bu cihazlar,sıradan ev nesnelerinden gelişmiş
- endüstriyel araçlara kadar değişiklik gösterir.
+IOT Protocols
 
- 1.MQTT
- -Otomotiv, lojistik, üretim, akıllı ev ve ulaşım sektöründe kullanılır.
- -Makineden makineye iletişim için kullanılan, standart tabanlı bir mesajlaşma protokolü veya kurallar dizisidir.
- -Çift yönlü iletişim sağlar.
+-The Internet of Things (IoT) explains the network of physical objects embedded with sensors, software, and other technologies for the purpose of connecting and sharing data with other devices and systems over the internet. These devices range from everyday household items to advanced industrial machinery.
 
- 2.CoAP
- -Bir uygulama katmanı protokolüdür.
- -Varsayılan olarak Udp'ye bağlanır. İsteğe bağlı TTLS'e bağlanır.
- -Yüksek düzeyde iletişim güvenliği sağlar.
+1.MQTT
+-Used in automotive, logistics, manufacturing, smart homes, and transportation sectors.
+-It is a standardized messaging protocol or set of rules used for machine-to-machine communication.
+Provides bidirectional communication.
 
- 3.TELNET PROTOKOLÜ
- -Varsayılan olarak 23 nolu portu kullanılır.
- -İstemci sunucu modeli kullanılır.
- -Bir bilgisayarın uzak bir bilgisayara bağlanarak, komut ve veri iletmek için kullanılır.
- -Gelen ve giden verileri şifrelemez bu yüzden güvenliği düşüktür.
- -Modern ağlarda telnet yerine ssh protokolü kullanılır.
- -Kısaca ağlarda uzak erişim için kullanılır ancak güvenilir değildir.
- -Ortadaki adam sayısı saldırısı yapılmaya uygundur.
+2.CoAP
+-An application-layer protocol.
+-It defaults to connecting over UDP and can optionally connect over DTLS.
+-Provides a high level of communication security.
 
- 4.SSH PROTOKOLÜ
- -Varsayılan olarak olarak 22 nolu portu kullanır.
- -Uzaktan güvenli oturum açma ve yeri transferi işlemlerinde kullanılır.
- -Güçlü bir şifre, bütünlük ve kimlik doğrulama sağlamaktadır.
- -Anahtar değişim yöntemi için diffie hellman anahtar değişim metodu kullanılır.
+3.TELNET Protocol
+-Uses port number 23 by default.
+-Follows the client-server model.
+-Used to connect one computer to another remotely to transmit commands and data.
+-Does not encrypt incoming and outgoing data, making it less secure.
+-In modern networks, SSH protocol is used instead.
+-Vulnerable to man-in-the-middle attacks.
 
- 5.FTP PROTOKOLLERİ
- -File transfer protokol.
- -Varsayılan olarak 21 nolu protokolü kullanır.
- -Temel amaç dosya paylaşımını sağlamaktadır.
+4.SSH Protocol
+-Uses port number 22 by default.
+-Used for secure remote login and file transfer.
+-Provides strong password, integrity, and authentication security.
+-Utilizes the Diffie-Hellman key exchange method for key exchange.
 
- 6.SMTP = SIMPLE MAIL TRANSFER PROTOKOL
- -Elektronik posta gönderimi için kullanılır.
- -Genellikle tcp protkolü üzerinden gerçekleşir.
- -Posta göndermek isteyen kullanıcı smtp protokolüne tcp bağlantısı kurar.Kimlik doğrulama yapar.
+5.FTP Protocols
+-Stands for File Transfer Protocol.
+-Defaults to port number 21.
+-Primarily used for file sharing.
 
- 7.DNS = DOMAIN NAME SYSTEM
--İnternet üzerindeki cihazların isimlerinin IP adresleri ile eşlenmesini sağlar.
--Varsayılan olarak 53 nolu portu kullanır.
--Tcp veya Udp üzerinden çalışabilir.
--Kısaca belirli makine adlarını, bilgisayarın anladığı dil olan IP numaralarına çevirmektedir.
+6.SMTP = Simple Mail Transfer Protocol
+-Used for sending electronic mail.
+-Typically operates over TCP.
+-Users connect to the SMTP protocol via a TCP connection to send mail and authenticate.
 
-8.TFTP PROTOKOLÜ
--Dosya aktarım için kullanılan bir ağ protokolüdür.
--Udp üzerinden çalışır.
--TFTP sunucu ve istemci arasında dosya aktarımı için kullanılır.İstemci dosya yüklemek veya indirmek için sunucuya
-istek atar.
--En önemli özelliği diğer dosya aktarım protokollerine göre daha basittir.Ayrıca daha az özellik vardır.
+7.DNS = Domain Name System
+-Facilitates the mapping of device names to IP addresses on the internet.
+-Defaults to port number 53.
+-Can operate over TCP or UDP.
+-Essentially translates specific machine names into IP numbers, which the computer understands.
 
-9.HTTP PROTOKOLÜ
--World wide webdeki verilerin iletişimini sağlamak için kullanılan bir protokoldür.
--Varsayılan olarak 80 nolu portu kullanır.
--İstemci sunucu modeli kullanarak çalışır.
--İstemci web sayfası gibi bir arayüz istemek için bir talep gönderir, sunucu belgeyi yanıt olarak gönderir.
- 
- HTTP YAYGIN KULLANILAN METODLAR:
- 1.Get: Sunucudan bir kaynak istemek için kullanılır.
- 2.Post: Sunucuya yeni bir kaynak veya mevcut kaynağı değiştirmek için kullanılır.
- 3.Put: Sunucuya yeni bir kaynak eklemek veya mevcut bir kaynağı değiştirmek için kullanılır.
- 4.Delete: Sunucudan bir kaynak silmek kullanılır.
- 5. Options: Sunucunun desteklediği metodları sorgulamak için kullanılır.
+8.TFTP Protocol
+-An network protocol used for file transfer.
+-Operates over UDP.
+-Used for file transfer between TFTP server and client. The client requests to upload or download a file from the server.
+-Notable for its simplicity and lack of features compared to other file transfer protocols.
 
- İstek ve Yanıt Mesajları
- -istek Mesajları: İstemci tarafından sunucuya gönderilir.
- -Yanıt Mesajları: Sunucu tarafından istemciye gönderilir.
+9.HTTP Protocol
+-A protocol used for communication of data on the World Wide Web.
+-Defaults to port number 80.
+-Operates with a client-server model.
+-The client sends a request to request a resource such as a web page, and the server responds with the document.
 
- -HTTP mesajları başlık ve gövde olmak üzere iki bölgeden oluşur.
- -HTTP Durum Kodları:
- 1-> Bilgilendirme kodları
- 2-> Başarılı kodlar
- 3-> Yönlendirme Kodları
- 4-> İstemci Kodları
- 5-> Sunucu hata kodları
+Common HTTP Methods:
+-Get: Used to request a resource from the server.
+-Post: Used to create a new resource or modify an existing resource on the server.
+-Put: Used to add a new resource or modify an existing resource on the server.
+-Delete: Used to delete a resource from the server.
+-Options: Used to query the methods supported by the server.
 
- HTTP 1.1 en yaygın kullanılan tiptir.
+Request and Response Messages:
+-Request Messages: Sent by the client to the server.
+-Response Messages: Sent by the server to the client.
+
+-HTTP messages consist of two parts, the header and the body.
+-HTTP Status Codes:
+1->Informational Codes
+2->Successful Codes
+3->Redirection Codes
+4->Client Error Codes
+5->Server Error Codes
+
+-HTTP 1.1 is the most widely used version.
