@@ -1,3 +1,4 @@
+
 1. apt/apt get install packageName = Used to download the package
 2. apt remove packageName = Deletes the package.
 3. apt upgrade = Updates everything on the computer.

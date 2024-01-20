@@ -1,4 +1,5 @@
-#Common commands used in Kali Linux
+                 
+                    *Common commands used in Kali Linux*
 
 1. setxkbmap tr= Operates the keyboard in Turkish.
 2. pwd = Shows the folder the user is in.

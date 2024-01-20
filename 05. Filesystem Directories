@@ -1,4 +1,5 @@
-Filesystem Directories in Kali Linux
+            
+                    *Filesystem Directories in Kali Linux*
 
 bin = Binary commands run by the user are found. This directory contains the executable files of system and user-installed programs.
 
