@@ -5,5 +5,4 @@
 For example: "python3 sherlock userName".
 
 - To create a virtual environment, you can use the command: "python -m venv myenv".
-
 - To deactivate the virtual environment, you can use the command: "deactivate".
