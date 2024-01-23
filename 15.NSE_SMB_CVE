@@ -1,0 +1,29 @@
+
+                    *NSE* - *SMB* - *CVE*
+
+Nmap Scripts:
+- Located in usr/share/nmap/scripts, Nmap scripts provide additional functionality.
+- "nmap --script scriptName" provides information about a specific script.
+
+nmblookup -A:
+- Provides the MAC address and name of a device.
+
+SMB (Server Message Block):
+- "nmap --script smb-os-discovery ipAdres -p(portNumber)" checks the specified IP address and port, and identifies the operating system.
+- "nmap --script smb-os-discovery ipAdres -p(portNumber) -d" is used to show errors.
+
+- "nmap ipAdres -p(portNumber) --script mysql-enum" is often used for information gathering.
+
+Brute:
+- Used for brute force attacks.
+- Typically not used in scanning phase.
+
+- Example: "nmap -p22 ipAdres --script ssh-brute --script-args userdb="address", passdb="address, unpwd.time=15" conducts a brute force attack on SSH using provided usernames and passwords.
+
+CVE Numbers:
+- Provides information about whether specified security vulnerabilities can be exploited.
+
+- "nmap ipAdres -p- -sV -T4 -vvv -oN --script vulners" provides short information about CVEs and their status.
+
+(Note: In the provided text, there are some typos and missing arguments in the command examples. Please double-check the commands for accuracy.)
+

@@ -1,0 +1,12 @@
+       
+                    **GreenBone (OpenVAS)
+
+Greenbone:
+- Greenbone is the name of the company.
+- It is an open-source application (free).
+- It is a tool used to detect, analyze, and report security vulnerabilities and weaknesses.
+
+Installation:
+- Run "apt install gvm -y" to download.
+- Complete the installation with "gvm-setup".
+- GVM stands for Greenbone Vulnerability Management.

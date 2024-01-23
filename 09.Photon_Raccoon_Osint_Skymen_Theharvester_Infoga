@@ -1,0 +1,15 @@
+           
+                    *Photon* - *Racconn* - *OSINT* - *Skymen* - *TheHarvester* - *Infoga*
+
+
+- Photon: A network analysis tool used to monitor, analyze, and detect leaks in network traffic.
+
+- Raccoon: A web content scanner used to find both visible and hidden web objects on websites and applications.
+
+- OSINT (Open Source Intelligence): The process of collecting intelligence by utilizing information from publicly available sources.
+
+- skymen.info: Provides Gmail addresses related to the entered address.
+
+- theHarvester: An OSINT tool used for gathering and analyzing information. For example: "theHarvester -d example.com -b all".
+
+- Infoga: Similar to theHarvester, used for information gathering and analysis. For example: "infoga -d example.com".

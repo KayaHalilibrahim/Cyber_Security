@@ -1,0 +1,17 @@
+
+                    *IP* - *lo* - *eth0*
+
+Commands for obtaining information about IP and MAC addresses:
+
+ip addr (ip a):  
+  - Displays information about IP addresses and MAC addresses.
+
+ip r:
+  - Shows routing information.
+
+lo (loopback):
+- Used for the computer to perform self-tests.
+
+eth0 (Ethernet 0):
+- Network interface.
+- Represents the Ethernet connection that your computer can use to connect to a network.

@@ -1,0 +1,19 @@
+
+                    *Running VPN & Changing DNS* & *Tor Network* & *Traceroute* & *Anonsurf*
+
+Running VPN:
+- Use the command "openvpn --config vpnName" to run the VPN.
+
+Changing DNS:
+- Use "sudo nano etc/resolv.conf" to change DNS settings.
+
+Tor Network:
+- Aims to provide anonymity and privacy on the internet.
+
+Traceroute:
+- Shows the route taken to reach a destination.
+- Example: "traceroute -l 8.8.8.8"
+
+Anonsurf:
+- Software designed to enhance users' privacy and anonymity on the internet.
+- Used to connect to the Tor network.

@@ -1,15 +1,23 @@
 
                     *Shodan*
+
 - Also known as the "Hacker Search Engine."
+
 - Shodan is a search engine that scans devices and IP addresses openly available on the internet.
+
 - Shodan displays devices on the internet and shows the open services and protocols on these devices.
+
 - With Shodan, you can customize your search; for example, you can specify which ports you want to search.
+
 - You can specify the region in which you want to search with Shodan, allowing you to narrow down your search to a specific area.
 
-*To use Shodan in the terminal:
+
+           *To use Shodan in the terminal:
 
 - Run shodan init ipKey (ipKey: obtained from your Shodan account).
+
 - Use "shodan search" to perform a sample search (e.g., shodan search --ports 80).
+
 - Use shodan host ipAddress to display open ports for a specific IP address.
 
 

@@ -1,4 +1,6 @@
 
+                    *General Operations*
+
 1. apt/apt get install packageName = Used to download the package
 2. apt remove packageName = Deletes the package.
 3. apt upgrade = Updates everything on the computer.
@@ -14,7 +16,7 @@ in the nano editor:
 - CTRL + O = It records.
 - CTRL + x = Exits the nano editor.
 
-11. Ci dosyaAdı = It is used for text editing like nano, working with commands.
+11. Ci fileName = It is used for text editing like nano, working with commands.
 
 In the ci editor:
 - v = Visual mode.

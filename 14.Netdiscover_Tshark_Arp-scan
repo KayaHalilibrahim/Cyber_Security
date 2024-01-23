@@ -1,0 +1,12 @@
+
+                    *Netdiscover* - *Tshark* - *Arp-scan*
+
+Netdiscover:
+- A network discovery tool that identifies active IP addresses and devices connected to a network.
+- For example: "netdiscover -r 10.0.2.0/24 -f" (r:range, f:fast)
+
+Tshark:
+- Terminal version of Wireshark, used for packet analysis.
+
+Arp-scan:
+- Similar to Netdiscover but offers faster scanning and more options.
