@@ -1,0 +1,17 @@
+                           
+                    *Shell*
+
+Remote Shell: Gaining remote access and usage permissions in the operating system shell of the target system. 
+(If successful, it is referred to as obtaining a shell.)
+
+There are two types:
+1. Bind Shell:
+   - Established through a connection initiated from the attacker towards the target.
+   - Listens on the target's IP address or port.
+   - Less preferred as it can be blocked by firewalls.
+
+2. Reverse Shell:
+   - Established by initiating a connection from the target towards the attacker.
+   - Listens on the attacker's IP address or port.
+   - The most commonly preferred type of shell connection.
+

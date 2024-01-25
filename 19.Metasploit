@@ -1,0 +1,21 @@
+ 
+                    *Metasloit
+ 
+
+- Metasploit is an exploitation management tool that encompasses executable remote exploits for the target system, as well as local exploits runnable within the target system, along with other modules.
+
+Auxiliary:
+- Auxiliary modules are used for information gathering (enumeration) about the target system.
+
+Payload:
+- Payload modules run (are sent) on exploited systems after the execution of exploits.
+- Example: Establishing a connection and running meterpreter after exploitation.
+
+Encoder:
+- Encoder modules are used to bypass security measures such as antivirus and firewall.
+
+NOP:
+- NOP modules ensure the processor on the target system enters a loop to execute the payload code and create a secure area for the payload to run.
+
+Post:
+- Post modules are modules that can be used in the post-exploitation phase after the exploitation process.

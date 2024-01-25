@@ -1,0 +1,138 @@
+
+                    *Meterpreter Commands*
+
+sysinfo:
+-Displays system information.
+
+show_mount:
+- Lists connected disks.
+
+idletime and locatime:
+-Shows idle time and local time.
+
+shutdown or reboot:
+- Shuts down or restarts the system.
+
+ipconfig:
+- Displays IP configuration.
+
+portfwd:
+- Performs packet forwarding.
+ 
+route:
+- Shows and modifies routes.
+ps:
+- Lists running processes.
+
+kill <PID>:
+- Terminates the process with the specified PID.
+
+getpid:
+- Displays the PID of the current session.
+
+migrate <PID>:
+- Moves processes to other sessions. Runs the specified process in the background. (PID = process ID)
+
+clearev: 
+- Clears event logs.
+
+shell:
+- Switches to the system's shell.
+
+Basic File Commands:
+
+help: 
+- Provides help.
+
+pwd:
+- Displays the current directory.
+
+ls: 
+- Lists the content.
+
+cd directoryName:
+- Changes the directory.
+
+cat fileName: 
+- Reads the file.
+ 
+edit fileName:
+- Edits the specified file.
+
+(del or rm) fileName: 
+- Deletes the file.
+
+(mkdir or rmdir) directoryName:
+- Creates or removes a directory.
+
+
+     -File Management Commands-
+
+execute -f fileName:
+-Executes the specified file.
+
+search -f fileName: 
+- Searches for a file.
+
+download source destination: 
+- Downloads a file.
+
+upload source destination: 
+- Uploads a file.
+
+
+      -Background and Sessions Management-
+ 
+background or bg:
+- Moves the Meterpreter session to the background.
+
+sessions -i <ID>: 
+- Brings the Meterpreter session with the specified ID to the foreground.
+
+bgrun, bglist, and bgkill:
+- Run, list, and kill Meterpreter sessions in the background.
+  
+...
+
+
+getuid:
+- Displays the connected session's user ID.
+
+getprivs:
+- Displays privileged processes in the connected session.
+
+getsystem -t 0:
+- Elevates the connected user to a system user.
+
+reg <command>: 
+- Manages the target system's Registry.
+
+hashdump:
+- Lists password hashes on the system.
+
+webcam_list: 
+- Lists available webcams on the system.
+
+webcam_snap:
+- Captures an image from the webcam.
+ 
+screenshot:
+- Captures the target's screen.
+
+keyscan_start and keyscan_stop:
+- Starts and stops keylogger recordings.
+ 
+keyscan_dump: 
+- Retrieves keylogger records.
+
+irb:
+- Opens an environment for creating and running Metasploit scripts.
+ 
+run <script>:
+- Runs the specified script.
+ 
+load <plugin>:
+- Loads a Metasploit plugin.
+
+Note:
+- Ensure that the syntax, spacing, and parameter usage are accurate for the commands to work effectively.

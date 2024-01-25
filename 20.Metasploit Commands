@@ -1,0 +1,72 @@
+
+                    *Metasploit commands*
+
+msfconsole:
+- Launches the Metasploit console.
+ 
+ msfdb run:
+- Starts the Metasploitable database.
+
+msfdb init:
+- Configures the Metasploitable database.
+
+db_status:
+- Checks the status of the Metasploitable database.
+
+search:
+- Used to search for modules.
+  Example: search smb
+
+info or advanced:
+- Provides brief or detailed information about a module.
+
+show:
+- Lists modules and their settings.
+
+use:
+- Used to select a module for use.
+
+options:
+- Displays module settings.
+ 
+set:
+- Configures module settings.
+
+check:
+- Performs an integrity check on the target through the selected module.
+
+run or exploit:
+- Executes the selected module or the provided operation.
+
+sessions:
+- Displays obtained shells and allows switching between them.
+
+jobs:
+- Shows background tasks.
+
+back:
+- Allows exiting the selected module.
+
+exit:
+- Closes Metasploit.
+
+
+                    -Database commands-
+
+service postgresql status:
+- Checks the status of the database.
+
+service postgresql start:
+- Starts PostgreSQL.
+
+msfdb init:
+-Configures the database.
+
+msfdb run:
+- Starts the database and launches msfconsole.
+
+msfconsole:
+-Launches the Metasploit console.
+
+Nmap scan in Msfconsole:
+- db_nmap -sV -p- -A --script vuln ipAdres --vv -oN dosyaKonumu/dosyaAdı
