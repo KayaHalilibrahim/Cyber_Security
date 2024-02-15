@@ -1,0 +1,13 @@
+
+           *DNS Spoofing*
+           
+- We intervene between the user and the DNS, redirecting their requests to a malicious server.
+- Ettercap is a graphical tool used for DNS spoofing.
+
+Steps with Ettercap:
+1. Open Ettercap with its graphical interface.
+2. Open the DNS spoof configuration file with `nano /etc/ettercap/etter.dns`.
+3. Add entries like: `www.google.com A <LinuxIpAddress>` to redirect requests.
+4. In Ettercap, go to Plugins, then Manage Plugins, and start the DNS spoof plugin.
+5. Start an Apache server using `service apache2 start`.
+6. When the poisoned device visits www.google.com, it will be redirected to the Linux web server.

@@ -1,0 +1,8 @@
+
+                *Hash Cracking*
+
+- hash-identifier: Used to determine the type of a hash value. It helps identify the hash type, as hash values produced by hash functions can be challenging to understand.
+
+- hashcat -m 400 -a 0 --status:
+  - m: Hash type.
+  - a: Attack mode.

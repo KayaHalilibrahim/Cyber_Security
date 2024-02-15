@@ -1,0 +1,12 @@
+
+            *Hydra with Dictionary Attack*
+            
+- hydra -L <file> -P <file> <ipAddress> ssh -v -d -f
+- For individual scans, it works well.
+
+To show attempts:
+- hydra -L <file> -P <file> <ipAddress> ssh -v -d -f
+- -v: Show service-related details.
+- -V: Show attempts.
+
+You can also launch Hydra and use the graphical interface by typing 'hydra'.

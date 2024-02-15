@@ -1,0 +1,7 @@
+
+                 *Nmap with Dictionary Attack*
+
+- nmap --script ssh-brute: Tries default passwords by default.
+
+To use a custom wordlist:
+- nmap --script ssh-brute --script-args userdb=<File> passdb=<File> <ipAddress> -p<portNumber>: Tries wordlists from the given files.

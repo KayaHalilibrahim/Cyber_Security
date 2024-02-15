@@ -1,0 +1,32 @@
+
+                    *Man-in-the-Middle (MITM) Attacks:*
+
+MitM attacks are when a hacker gets in the middle of two communicating parties, listens to, alters, or interrupts the communication.
+
+Basic Networking Terms:
+- Segments: Pieces of data in communication.
+- Packets: Data units transferred over a network.
+- Frames: Units that make up data packets in network communication.
+
+Wireshark Filtering:
+To analyze network traffic with Wireshark, you can use a command like:
+
+On teminal:
+tshark -i eth0 -f "host 1.1.1.1"
+
+-i: Interface (the network interface you're monitoring)
+-f: Filtering rule
+
+Promiscuous Mode:
+- Hub: A basic network device that sends received packets to all connected devices, regardless of the intended recipient.
+  
+- Switch: A more advanced device that sends packets only to the device with the matching MAC address. However, some switches can act like hubs, sending packets to all devices if they are in "promiscuous mode."
+
+Understanding Wireshark:
+Wireshark is a tool that helps interpret the data flowing through a network. It's like a translator for network traffic.
+
+***MITM METHODOLOGY:
+- EXPLORE THE SURROUNDINGS
+- PREPARE THE SNIFFER (WIRESHARK).
+- BECOME MITM (POISON ARPs BIDIRECTIONALLY)
+- SNIFF.

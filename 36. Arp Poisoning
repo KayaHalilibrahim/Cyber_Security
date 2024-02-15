@@ -1,0 +1,35 @@
+
+                    *ARP Poisoning*
+
+- Arp poisoning is a type of attack where an attacker sends falsified ARP (Address Resolution Protocol) messages over a local area network. This results in the linking of an attacker's MAC address with the IP address of a legitimate computer or server on the network.
+
+arpspoof Command:
+- To perform ARP poisoning using the `arpspoof` command:
+
+
+*arpspoof -i eth0 <ipAddress>
+
+
+- This command changes the MAC address for all devices on the network.
+
+Wireshark Analysis:
+- In Wireshark, check the MAC address in the destination (dst) field. If the target device's MAC address matches ours, the ARP spoofing attack is successful.
+
+Selective ARP Poisoning:
+- To selectively poison the ARP cache for two specific IP addresses:
+
+*arpspoof -i eth0 -t <ipAddress1> <ipAddress2>
+
+- This command makes the MAC address of ipAddress1 appear the same as ours.
+
+Enabling IP Forwarding:
+- For the packets to pass through us:
+
+*echo 1 > /proc/sys/net/ipv4/ip_forward
+
+Reverse ARP Poisoning:
+- To perform reverse ARP poisoning:
+
+*arpspoof -i eth0 -t <ipAddress1> -r <ipAddress2>
+
+- This makes packets going to both ipAddress1 and ipAddress2 come through us first.

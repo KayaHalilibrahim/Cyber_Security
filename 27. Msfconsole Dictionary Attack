@@ -1,0 +1,7 @@
+
+        *msfconsole with Dictionary Attack*
+        
+1. msfconsole
+2. use auxiliary/scanner/ssh/ssh_login
+3. options
+4. Set up and exploit.

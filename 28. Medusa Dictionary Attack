@@ -1,0 +1,15 @@
+
+
+           *Medusa with Dictionary Attack*
+
+- medusa -u: Specify usernames.
+- medusa -U: Provide a file with usernames.
+- medusa -p: Specify passwords.
+- medusa -P: Provide a file with passwords.
+- medusa -h: Specify a single IP.
+- medusa -H: Specify multiple IPs.
+- -M: Specify the service (e.g., ssh).
+- -f: Stop on success.
+
+Example:
+- medusa -U <file> -P <file> -h <ipAddress> -M ssh -f

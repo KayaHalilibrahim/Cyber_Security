@@ -1,0 +1,9 @@
+
+            *Ncrack with Dictionary Attack*
+
+- ncrack --user <username> --pass <password>
+
+If using files:
+- ncrack -U <file> -P <file> -iL <ipAddressFile> -m ssh -p 22 -d -f
+- -d: Debug.
+

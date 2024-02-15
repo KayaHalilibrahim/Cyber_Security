@@ -1,0 +1,19 @@
+
+                    *SSH*
+
+- ssh vagrant@<ipAddress>
+- Enter the password.
+
+- ssh vagrant@<ipAddress> echo <message> > <fileName>: Writes the message to the specified file on the Vagrant machine.
+
+Options:
+-f (force): Force
+-r (restart): Restart
+-t (timeout): After 5 seconds...
+- ssh vagrant@<ipAddress> shutdown -f -r -t 05: Forces a shutdown and restart after 5 seconds.
+
+To copy a file from the Vagrant machine:
+- scp vagrant@<ipAddress> <filePath> <destination>: Downloads the file.
+
+To copy a file to the Vagrant machine:
+- scp <localFilePath> vagrant@<ipAddress>:<destination>: Uploads the file.

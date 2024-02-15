@@ -1,0 +1,26 @@
+
+                    *Searchsploit*
+
+searchsploit is a tool that searches and interacts with the Exploit Database. 
+It allows us to copy the database locally and perform various operations.
+
+- searchsploit -h: Provides usage instructions.
+
+- searchsploit -u: Updates the database.
+
+- searchsploit ms17: Shows entries containing "ms17" in the database.
+
+- searchsploit ms17 -w: Displays the URL of the entry.
+
+- searchsploit Microsoft -t: Shows entries with "Microsoft" in the title.
+
+- searchsploit ms17 id: Shows entries with a specific ID.
+
+- searchsploit ms17 -p: Displays the local path of the entry.
+
+- searchsploit ms17 -v: Provides verbose information.
+
+- searchsploit --is <number> -x: Opens the entry in the Vim editor for editing.
+
+- searchsploit --is <number> -m: Makes a local copy (Mirror) of the entry.
+

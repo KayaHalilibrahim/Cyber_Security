@@ -1,0 +1,18 @@
+
+                *When selecting a payload*
+
+Staged payloads:
+- have a / in their name.
+Example: payload/android/meterpreter/reverse_tcp
+- They are smaller in size.
+- They are less stable.
+- They work within stages.
+- They require files inside the stage.
+
+Non-staged payloads:
+- have an _ in their name.
+Example: payload/android/meterpreter_reverse_tcp
+- They are larger in size.
+- They are stable.
+- They don't work within stages.
+- They can work independently.

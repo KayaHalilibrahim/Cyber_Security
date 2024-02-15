@@ -1,0 +1,15 @@
+
+              *DHCP Spoofing*
+              
+- Open Ettercap.
+- Select DHCP Spoofing.
+- Specify the IP pool range (e.g., 10.10.10.110-120).
+- Enter the netmask.
+- Set the DNS server IP to the attacker's IP.
+- Open Wireshark to monitor.
+
+DHCP Starvation:
+- Continuously send discover packets.
+- This will keep the DHCP server busy.
+- It is a kind of DoS attack on the DHCP server.
+- Yersinia tool can be used for this.
